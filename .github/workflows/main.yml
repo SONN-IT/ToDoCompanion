@@ -1,0 +1,36 @@
+name: Build & Publish
+run-name: Version ${{github.ref_name}}
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-linux:
+    name: Build Linux
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+    - name: Build .xpi file
+      run: |
+        zip -r ${{github.event.repository.name}}@SONN.xpi * -x "*.git" -x ".github"
+    - uses: actions/upload-artifact@v3
+      with:
+        name: xpi
+        path: ${{github.event.repository.name}}@SONN.xpi
+  create-release:
+    name: Create GitHub Release
+    needs: build-linux
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+      - uses: ncipollo/release-action@v1
+        with:
+          draft: false
+          artifacts: "xpi/${{github.event.repository.name}}@SONN.xpi"
+          token: ${{secrets.GITHUB_TOKEN}}
+          makeLatest: true
