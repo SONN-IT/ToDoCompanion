@@ -10,5 +10,20 @@
   },
   "ExtensionActionLabel": {
     "message": "Create ToDo"
+  },
+  "ErrorMessageTitle": {
+    "message": "Error - SIN ToDo Companion"
+  },
+  "ErrorMessageGeneral": {
+    "message": "Unknown error while creating the ToDo."
+  },
+  "ErrorMessageMailFromTrash": {
+    "message": "Unable to create a To-Do from an email in the Trash folder. Please move the email to a different folder and try again."
+  },
+  "ErrorMessageMissingConfig": {
+    "message": "The configuration (policies.json) is missing or is corrupt. Please contact your system administrator."
+  },
+  "ErrorMessageFailedCopy": {
+    "message": "The message could not be copied."
   }
 }

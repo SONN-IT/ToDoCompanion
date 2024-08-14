@@ -10,5 +10,20 @@
   },
   "ExtensionActionLabel": {
     "message": "Aufgabe erstellen"
+  },
+  "ErrorMessageTitle": {
+    "message": "Fehler - SIN Aufgabenliste Helfer"
+  },
+  "ErrorMessageGeneral": {
+    "message": "Unbekannter Fehler beim Erstellen der Aufgabe."
+  },
+  "ErrorMessageMailFromTrash": {
+    "message": "Es ist nicht möglich, eine Aufgabe aus einer E-Mail im Papierkorb zu erstellen. Bitte verschiebe die E-Mail in einen anderen Ordner und versuche es erneut"
+  },
+  "ErrorMessageMissingConfig": {
+    "message": "Die Konfiguration (policies.json) ist fehlt oder ist fehlerhaft. Bitte kontaktieren Sie Ihren Systemadministrator."
+  },
+  "ErrorMessageFailedCopy": {
+    "message": "Die E-Mail konnte nicht kopiert werden."
   }
 }

@@ -14,8 +14,8 @@ async function main() {
         // console.log("trash mail: exit")
         browser.notifications.create({
             "type": "basic",
-            "title": "Thunderbird - ToDo",
-            "message": "E-Mails im Papierkorb können nicht für ToDo's verwendet werden"
+            "title": browser.i18n.getMessage("ErrorMessageTitle"),
+            "message": browser.i18n.getMessage("ErrorMessageMailFromTrash")
         });
     } else {
         browser.messages.onCopied.addListener(async function copiedMessageListener(originalMessages, copiedMessages) {
@@ -41,8 +41,8 @@ async function main() {
                 if (baseUrl == null) {
                     browser.notifications.create({
                         "type": "basic",
-                        "title": "Thunderbird - ToDo",
-                        "message": "FATAL: Base URL is not set. Please contact your system administrator (Error: Missing extension setting in policies.json"
+                        "title": browser.i18n.getMessage("ErrorMessageTitle"),
+                        "message": browser.i18n.getMessage("ErrorMessageMissingConfig")
                     });
                     return
                 }
@@ -54,8 +54,8 @@ async function main() {
                 } else {
                     browser.notifications.create({
                         "type": "basic",
-                        "title": "Thunderbird - ToDo",
-                        "message": "Fehler bei der Todo Erstellung"
+                        "title": browser.i18n.getMessage("ErrorMessageTitle"),
+                        "message": browser.i18n.getMessage("ErrorMessageGeneral")
                     });
                 }
             }
@@ -71,8 +71,8 @@ async function main() {
             // console.log("Failed to copy message: ", e);
             browser.notifications.create({
                 "type": "basic",
-                "title": "Thunderbird - ToDo",
-                "message": "Die E-Mail konnte nicht kopiert werden"
+                "title": browser.i18n.getMessage("ErrorMessageTitle"),
+                "message": browser.i18n.getMessage("ErrorMessageFailedCopy")
             });
         }
     }
