@@ -28,19 +28,19 @@
   },
     "experiment_apis": {
       "ImapTools": {
-        "schema": "api/imapTools.json",
+        "schema": "api/imapTools/schema.json",
         "parent": {
           "scopes": ["addon_parent"],
-          "script": "api/imapTools.js",
+          "script": "api/imapTools/script.js",
           "paths": [["ImapTools"]]
         }
       },
       "LegacyPrefs": {
-        "schema": "api/legacyPrefs.json",
+        "schema": "api/legacyPrefs/schema.json",
         "parent": {
           "scopes": ["addon_parent"],
           "paths": [["LegacyPrefs"]],
-          "script": "api/legacyPrefs.js"
+          "script": "api/legacyPrefs/script.js"
         }
       }
     },
