@@ -23,7 +23,7 @@
     },
   "message_display_action": {
     "default_title": "Todo add",
-    "default_icon": "logo.svg",
+    "default_icon": "images/logo.svg",
     "default_label": "ToDo"
   },
     "experiment_apis": {
@@ -46,9 +46,9 @@
     },
     "manifest_version": 2,
   "icons": {
-    "16": "logo.svg",
-    "32": "logo.svg",
-    "48": "logo.svg",
-    "96": "logo.svg"
+    "16": "images/logo.svg",
+    "32": "images/logo.svg",
+    "48": "images/logo.svg",
+    "96": "images/logo.svg"
   }
 }
