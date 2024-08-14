@@ -34,7 +34,7 @@ async function main() {
                     return;
                 }
 
-                console.log("ToDoForSIN - managedStorage: ", managedStorage);
+                console.log("ToDoCompanion - managedStorage: ", managedStorage);
             
                 var baseUrl = managedStorage.URL;
 
