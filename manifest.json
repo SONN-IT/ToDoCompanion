@@ -1,50 +1,62 @@
 {
-    "name": "SIN Aufgabenliste Companion",
-    "description": "Thunderbird Companion für das (experimentelle) SIN Aufgabenliste Feature. Erstellt Aufgaben in der SIN aus E-Mails heraus.",
-    "version": "1.0",
-    "applications": {
-      "gecko": {
-        "id": "ToDoForSIN@SONN",
-        "strict_min_version": "115.0"
-      }
-    },
-    "permissions": [
-      "messagesRead",
-      "accountsRead",
-      "messagesMove",
-      "activeTab",
-      "tabs",
-      "notifications"
-    ],
-    "background": {
-      "scripts": [
-        "scripts/background.js"
-      ]
-    },
+  "name": "SIN Aufgabenliste Companion",
+  "description": "Thunderbird Companion für das (experimentelle) SIN Aufgabenliste Feature. Erstellt Aufgaben in der SIN aus E-Mails heraus.",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "ToDoForSIN@SONN",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": [
+    "messagesRead",
+    "accountsRead",
+    "messagesMove",
+    "activeTab",
+    "tabs",
+    "notifications"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
   "message_display_action": {
     "default_title": "Todo add",
     "default_icon": "images/logo.svg",
     "default_label": "ToDo"
   },
-    "experiment_apis": {
-      "ImapTools": {
-        "schema": "api/imapTools/schema.json",
-        "parent": {
-          "scopes": ["addon_parent"],
-          "script": "api/imapTools/script.js",
-          "paths": [["ImapTools"]]
-        }
-      },
-      "LegacyPrefs": {
-        "schema": "api/legacyPrefs/schema.json",
-        "parent": {
-          "scopes": ["addon_parent"],
-          "paths": [["LegacyPrefs"]],
-          "script": "api/legacyPrefs/script.js"
-        }
+  "experiment_apis": {
+    "ImapTools": {
+      "schema": "api/imapTools/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "script": "api/imapTools/script.js",
+        "paths": [
+          [
+            "ImapTools"
+          ]
+        ]
       }
     },
-    "manifest_version": 2,
+    "LegacyPrefs": {
+      "schema": "api/legacyPrefs/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "LegacyPrefs"
+          ]
+        ],
+        "script": "api/legacyPrefs/script.js"
+      }
+    }
+  },
+  "manifest_version": 2,
   "icons": {
     "16": "images/logo.svg",
     "32": "images/logo.svg",
