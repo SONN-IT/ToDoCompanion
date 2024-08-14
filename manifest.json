@@ -1,7 +1,7 @@
 {
   "name": "__MSG_ExtensionName__",
   "description": "__MSG_ExtensionDescription__",
-  "version": "1.2",
+  "version": "1.2.1",
   "author": "SONN Patentanwälte GmbH & Co KG (dpf)",
   "applications": {
     "gecko": {
