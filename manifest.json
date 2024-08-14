@@ -23,9 +23,9 @@
     ]
   },
   "message_display_action": {
-    "default_title": "Todo add",
+    "default_title": "Erstellt eine Aufgabe in der SIN",
     "default_icon": "images/logo.svg",
-    "default_label": "ToDo"
+    "default_label": "Aufgabe erstellen"
   },
   "experiment_apis": {
     "ImapTools": {
