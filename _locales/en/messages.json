@@ -1,0 +1,14 @@
+{
+  "ExtensionName": {
+    "message": "SIN ToDo Companion"
+  },
+  "ExtensionDescription": {
+    "message": "The 'SIN ToDo Companion' is a Thunderbird extension, which creates a new ToDo in SIN phoenix based on the selected message."
+  },
+  "ExtensionActionTitle": {
+    "message": "Create a ToDo in SIN"
+  },
+  "ExtensionActionLabel": {
+    "message": "Create ToDo"
+  }
+}

@@ -1,13 +1,15 @@
 {
-  "name": "SIN Aufgabenliste Companion",
-  "description": "Thunderbird Companion für das (experimentelle) SIN Aufgabenliste Feature. Erstellt Aufgaben in der SIN aus E-Mails heraus.",
+  "name": "__MSG_ExtensionName__",
+  "description": "__MSG_ExtensionDescription__",
   "version": "1.1",
+  "author": "SONN Patentanwälte GmbH & Co KG (dpf)",
   "applications": {
     "gecko": {
       "id": "ToDoCompanion@SONN",
       "strict_min_version": "115.0"
     }
   },
+  "default_locale": "en",
   "permissions": [
     "messagesRead",
     "accountsRead",
@@ -23,9 +25,9 @@
     ]
   },
   "message_display_action": {
-    "default_title": "Erstellt eine Aufgabe in der SIN",
+    "default_title": "__MSG_ExtensionActionTitle__",
     "default_icon": "images/logo.svg",
-    "default_label": "Aufgabe erstellen"
+    "default_label": "__MSG_ExtensionActionLabel__"
   },
   "experiment_apis": {
     "ImapTools": {

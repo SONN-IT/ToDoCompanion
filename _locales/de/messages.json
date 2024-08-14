@@ -1,0 +1,14 @@
+{
+  "ExtensionName": {
+    "message": "SIN Aufgabenliste Helfer"
+  },
+  "ExtensionDescription": {
+    "message": "Der 'SIN Aufgabenliste Helfer' ist eine Thunderbird Erweiterung, die auf Basis der ausgewählten Nachricht eine neue Aufgabe in SIN phoenix erstellt."
+  },
+  "ExtensionActionTitle": {
+    "message": "Erstellt eine Aufgabe in der SIN"
+  },
+  "ExtensionActionLabel": {
+    "message": "Aufgabe erstellen"
+  }
+}
