@@ -1,11 +1,11 @@
 {
-    "name": "ToDo",
-    "description": "Thunderbird Add-On für das (experimentelle) SIN ToDo Feature",
+    "name": "SIN Aufgabenliste Companion",
+    "description": "Thunderbird Companion für das (experimentelle) SIN Aufgabenliste Feature. Erstellt Aufgaben in der SIN aus E-Mails heraus.",
     "version": "1.0",
     "applications": {
       "gecko": {
-        "id": "toDo@sonn.at",
-        "strict_min_version": "78.0"
+        "id": "ToDoForSIN@SONN",
+        "strict_min_version": "115.0"
       }
     },
     "permissions": [
