@@ -1,7 +1,7 @@
 {
   "name": "SIN Aufgabenliste Companion",
   "description": "Thunderbird Companion für das (experimentelle) SIN Aufgabenliste Feature. Erstellt Aufgaben in der SIN aus E-Mails heraus.",
-  "version": "1.0",
+  "version": "1.1",
   "applications": {
     "gecko": {
       "id": "ToDoForSIN@SONN",
