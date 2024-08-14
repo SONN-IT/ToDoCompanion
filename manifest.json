@@ -14,7 +14,8 @@
     "messagesMove",
     "activeTab",
     "tabs",
-    "notifications"
+    "notifications",
+    "storage"
   ],
   "background": {
     "scripts": [
@@ -39,20 +40,6 @@
             "ImapTools"
           ]
         ]
-      }
-    },
-    "LegacyPrefs": {
-      "schema": "api/legacyPrefs/schema.json",
-      "parent": {
-        "scopes": [
-          "addon_parent"
-        ],
-        "paths": [
-          [
-            "LegacyPrefs"
-          ]
-        ],
-        "script": "api/legacyPrefs/script.js"
       }
     }
   },

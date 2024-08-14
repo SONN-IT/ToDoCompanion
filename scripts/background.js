@@ -27,13 +27,22 @@ async function main() {
                 const headerMessageId = copiedMessage.headerMessageId
                 // console.log("copiedMessage imapUid", headerMessageId);
                 // console.log("copiedMessage: ", copiedMessage);
-                const baseUrl = await messenger.LegacyPrefs.getPref("extensions.todo.baseurl");
+                try {
+                    managedStorage = await browser.storage.managed.get('URL');
+                  } catch (e) {
+                    console.error(e);
+                    return;
+                }
+
+                console.log("ToDoForSIN - managedStorage: ", managedStorage);
+            
+                var baseUrl = managedStorage.URL;
+
                 if (baseUrl == null) {
-                    // console.log("please setup pref extensions.todo.baseurl e.g. https://localhost");
                     browser.notifications.create({
                         "type": "basic",
                         "title": "Thunderbird - ToDo",
-                        "message": "please setup pref extensions.todo.baseurl e.g. https://localhost"
+                        "message": "FATAL: Base URL is not set. Please contact your system administrator (Error: Missing extension setting in policies.json"
                     });
                     return
                 }
