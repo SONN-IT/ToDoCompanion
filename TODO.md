@@ -1,0 +1,1 @@
+- Improve multi-language support (background.js)
